@@ -1,20 +1,25 @@
 <div class="navbar-worldia">
   <!-- Logo -->
-  <div class="navbar-worldia-brand">
-    <p>
-      <% link_to "/" do %>
-        <%= image_tag "worldialogo.png" %>
-      <% end %>
-    </p>
-    <p id="tagline">
-      voyages à la carte
-    </p>
-  </div>
+  <% link_to "/" do %>
+    <div class="navbar-worldia-brand">
+      <p>
+          <%= image_tag "worldialogo.png" %>
+      </p>
+      <p id="tagline">
+        voyages à la carte
+      </p>
+    </div>
+  <% end %>
 
   <!-- Right Navigation -->
   <div class="navbar-worldia-right">
     <!-- Text link -->
-    <a href="https://www.lewagon.com" class="navbar-wagon-item navbar-wagon-link">Connexion</a>
+    <div id="login">
+        <p id="logintext">Identifiez-vous:</p>
+        <p>
+          <a href="/">Mon compte</a>
+        </p>
+    </div>
   </div>
 
 </div>
