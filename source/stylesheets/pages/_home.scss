@@ -1,7 +1,7 @@
 .mainpage{
   color: $text-color;
   h2{
-    font-size: 40px;
+    font-size: 27px;
   }
   p{
     font-size: 20px;
@@ -22,14 +22,14 @@
 }
 
 .section-heading:before {
-  background: linear-gradient(to bottom, $text-color, $text-color) no-repeat left center / 95% 4px;
+  background: linear-gradient(to bottom, $text-color, $text-color) no-repeat left center / 95% 2px;
   content: "";
   display: table-cell;
   width: 50%;
 }
 
 .section-heading:after {
-  background: linear-gradient(to bottom, $text-color, $text-color) no-repeat right center / 95% 4px;
+  background: linear-gradient(to bottom, $text-color, $text-color) no-repeat right center / 95% 2px;
   content: "";
   display: table-cell;
   width: 50%;
