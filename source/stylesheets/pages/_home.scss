@@ -126,7 +126,7 @@
 }
 
 .testimonials{
-  margin-top: 4em;
+  margin-top: 6em;
 }
 
 .quote{
@@ -146,6 +146,7 @@
   line-height: 25px;
   text-align: right;
   color: $gray-lighter;
+  font-weight: 200;
 }
 
 .fa-quote-left{
@@ -155,6 +156,32 @@
   font-size: 38px;
   color: $brand-light;
 }
+
+.agency-box{
+  position: relative;
+  padding-top: 3em;
+  .btn{
+    margin-top: 3em;
+  }
+}
+
+// footer
+
+.foot-title{
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.foot-content{
+  ul{
+    list-style-type: none;
+    padding-left: 0;
+    padding-top: 1em;
+  }
+}
+
+
+// ids
 
 #screen1{
   min-height: 72vh;
@@ -232,6 +259,115 @@
       width: 50%;
     }
 }
+
+#screen7{
+  min-height: 20em;
+  padding-top: 2em;
+  background-color: $bg-dark;
+  color: white;
+    .section-heading:before {
+      background: linear-gradient(to bottom, white, white) no-repeat left center / 95% 2px;
+      content: "";
+      display: table-cell;
+      width: 50%;
+    }
+    .section-heading:after {
+      background: linear-gradient(to bottom, white, white) no-repeat right center / 95% 2px;
+      content: "";
+      display: table-cell;
+      width: 50%;
+    }
+}
+
+#footer{
+  min-height: 20em;
+}
+
+
+// elements
+
+
+#rating{
+  margin-bottom: -24px;
+  font-size: 7em;
+  font-weight: 600;
+}
+
+#outoffive{
+  color: $brand-light;
+  margin-left: -25px;
+}
+
+#allratings{
+  color: white;
+  text-decoration: underline;
+  font-size: 19px;
+}
+
+#pro-advantages{
+  min-height: 338px;
+  text-align: left;
+  font-size: 20px;
+  line-height: 51px;
+  font-weight: 300;
+  .fa{
+    font-size: 23px;
+    line-height: 43px;
+  }
+}
+
+#pro-cta{
+  text-align: left;
+  position: absolute;
+  bottom: 0;
+  .btn{
+    padding: 10px 109px;
+  }
+}
+
+
+@media screen and (max-width: 991px){
+  #pro-advantages{
+    min-height: 11em;
+  }
+  #pro-cta{
+    left: 7%;
+  }
+
+}
+
+// footer
+
+#footer{
+  padding-top: 3em;
+  padding-left: 5%;
+  padding-right: 5%;
+  text-align: left;
+  a{
+    color: $gray-light;
+  }
+}
+
+#foot-social{
+  padding-top: 2em;
+  padding-left: 3em;
+  .fa{
+    position: relative;
+    font-size: 26px;
+    margin: -8px;
+  }
+}
+
+#legalmentions{
+  padding-top: 2em;
+  text-align: center;
+  p{
+    font-size: 15px;
+    line-height: 9px;
+  }
+}
+
+// trips exemples
 
 #newyork{
   background: image_url("trips/newyorkmiami.jpg");
