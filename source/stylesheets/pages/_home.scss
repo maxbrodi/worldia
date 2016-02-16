@@ -79,6 +79,17 @@
   background: black;
   padding: 8em 2em;
   border-radius: 6px 6px 0px 0px;
+  &:hover > .overlay {
+    width:100%;
+    height:100%;
+    position:absolute;
+    top: 0;
+    right: 0;
+    background-color:#000;
+    opacity:0.5;
+    border-radius: 6px 6px 0px 0px;
+    padding-top: 117px;
+  }
 }
 
 .trip-card-price{
@@ -107,10 +118,48 @@
   }
 }
 
+.overlay{
+  opacity: 0;
+  position: absolute;
+  color: white;
+  font-size: 23px;
+}
+
+.testimonials{
+  margin-top: 4em;
+}
+
+.quote{
+  margin-bottom: 4em;
+}
+
+.quote-text{
+  position: relative;
+  font-size: 22px;
+  text-align: justify;
+  padding: 0em 2em;
+  min-height: 3em;
+}
+
+.quote-author{
+  font-size: 13px;
+  line-height: 25px;
+  text-align: right;
+  color: $gray-lighter;
+}
+
+.fa-quote-left{
+  position: absolute;
+  left: 0;
+  top: -26px;
+  font-size: 38px;
+  color: $brand-light;
+}
+
 #screen1{
   min-height: 72vh;
   background: image_url("lookingcity.jpg");
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
   h2{
     font-size: 34px;
@@ -165,9 +214,29 @@
   padding-top: 2em;
 }
 
+#screen5{
+  min-height: 20em;
+  background-color: $brand-color;
+  padding-top: 2em;
+  color: white;
+    .section-heading:before {
+      background: linear-gradient(to bottom, white, white) no-repeat left center / 95% 2px;
+      content: "";
+      display: table-cell;
+      width: 50%;
+    }
+    .section-heading:after {
+      background: linear-gradient(to bottom, white, white) no-repeat right center / 95% 2px;
+      content: "";
+      display: table-cell;
+      width: 50%;
+    }
+}
+
 #newyork{
   background: image_url("trips/newyorkmiami.jpg");
   background-size: cover;
+  background-color: black;
 }
 
 #basicthai{
